@@ -1,0 +1,64 @@
+//base cloud style
+.cloud {
+	content: '';
+	position: relative;
+	height: 90px;
+	width: 230px;
+	background-color: white;
+	-webkit-border-radius: 250px;
+    -webkit-box-shadow: 10px 4px 3px lightgray inset;
+}
+
+//cloud fluffing
+.cloud::after, .cloud::before {
+	content: '';
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	-webkit-border-radius: 150px;
+	-webkit-box-shadow: 8px 4px 3px 1px lightgray inset;
+	top: -70px;
+	transform: rotate(45deg);
+}
+
+//right puff shape
+.cloud::after {
+	left: 110px;
+	top: -70px;
+}
+
+//left puff shape
+.cloud::before {
+	left: 45px;
+	top: -50px;
+	height: 80px;
+	width: 80px;
+	
+}
+
+//cloud 1 speed and style
+.c1 {
+    -webkit-animation: floatingcloud 45s linear infinite;
+}
+
+.c2 {
+    -webkit-animation: floatingcloud 45s linear infinite; 
+}
+
+.c3 {
+    -webkit-animation: floatingcloud 45s linear infinite;
+}
+
+.c4 {
+    -webkit-animation: floatingcloud 45s linear infinite;
+}
+
+.c5 {
+    -webkit-animation: floatingcloud 45s linear infinite;
+}
+
+@-webkit-keyframes floatingcloud {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
