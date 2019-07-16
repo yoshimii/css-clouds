@@ -1,0 +1,22 @@
+{
+  "name": "sunrise-animation",
+  "version": "1.0.0",
+  "description": "Sunrise Animation",
+  "scripts": {
+    "compile-less": "lessc less/index.less styles/index.css",
+    "devserver": "live-server",
+    "watch-less": "less-watch-compiler less css index.less",
+    "start": "npm-run-all --parallel devserver watch-less"
+  },
+  "contributors": [
+    "Mikey Nichols, Emma Zarate"
+  ],
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0",
+    "npm-run-all": "^4.1.1"
+  },
+  "dependencies": {
+    "lessc": "^1.0.2"
+  }
+}
